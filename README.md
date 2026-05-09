@@ -1,27 +1,27 @@
-📌 Project Overview
+Project Overview
 
 This project is a Python-based Image Steganography Tool developed to securely hide and extract secret text messages inside images using Least Significant Bit (LSB) Steganography.
 
 The tool allows users to:
 
-🔐 Encode hidden messages into images
-🔍 Decode and retrieve hidden messages
-🧠 Understand practical steganography concepts
-⚙️ Work with binary manipulation and image processing
-🛡️ Explore cybersecurity-related data hiding techniques
+ Encode hidden messages into images
+ Decode and retrieve hidden messages
+ Understand practical steganography concepts
+ Work with binary manipulation and image processing
+ Explore cybersecurity-related data hiding techniques
 
 The project was built as a hands-on cybersecurity and Python backend learning project with a modular and scalable structure.
 
-🚀 Features
-✅ Hide secret messages inside images
-✅ Extract hidden messages from encoded images
-✅ LSB (Least Significant Bit) based implementation
-✅ Binary-level data manipulation
-✅ Delimiter-based message termination
-✅ Clean modular Python structure
-✅ Beginner-friendly architecture
-✅ Lightweight and fast execution
-🧠 How It Works
+ Features
+ Hide secret messages inside images
+ Extract hidden messages from encoded images
+ LSB (Least Significant Bit) based implementation
+ Binary-level data manipulation
+ Delimiter-based message termination
+ Clean modular Python structure
+ Beginner-friendly architecture
+ Lightweight and fast execution
+ How It Works
 
 The project uses LSB Steganography.
 
@@ -86,7 +86,7 @@ python test_decoder.py
 
 The hidden message will be extracted from the encoded image.
 
-🧪 Example
+ Example
 Input Message
 Hello World
 Encoded Inside
@@ -94,7 +94,7 @@ sample_image.png
 Output
 Hidden Message:
 Hello World
-🛡️ Security Note
+Security Note
 
 This project demonstrates the fundamentals of steganography and data hiding.
 
