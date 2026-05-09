@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Steganography</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1><span class="highlight">Phishnet Sentinel</span> // Stego-Module</h1>
+            <p>AES-256-CBC Encrypted LSB Steganography</p>
+        </header>
+
+        <div class="tabs">
+            <button class="tab-btn active" onclick="switchTab('encode')">ENCODE</button>
+            <button class="tab-btn" onclick="switchTab('decode')">DECODE</button>
+        </div>
+
+        <!-- ENCODE SECTION -->
+        <section id="encode-section" class="active-section">
+            <form id="encode-form">
+                <div class="input-group">
+                    <label for="encode-img">Target Cover Image (PNG/JPG):</label>
+                    <input type="file" id="encode-img" name="file" accept=".png, .jpg, .jpeg" required>
+                </div>
+                <div class="input-group">
+                    <label for="encode-msg">Secret Payload:</label>
+                    <textarea id="encode-msg" name="message" rows="4" placeholder="Enter classified data..." required></textarea>
+                </div>
+                <div class="input-group">
+                    <label for="encode-pass">Encryption Key:</label>
+                    <input type="password" id="encode-pass" name="password" placeholder="SuperSecret123" required>
+                </div>
+                <button type="submit" class="action-btn">EXECUTE ENCODING</button>
+            </form>
+            <div id="encode-status" class="status-box hidden"></div>
+        </section>
+
+        <!-- DECODE SECTION -->
+        <section id="decode-section" class="hidden-section">
+            <form id="decode-form">
+                <div class="input-group">
+                    <label for="decode-img">Encoded Image (PNG):</label>
+                    <input type="file" id="decode-img" name="file" accept=".png" required>
+                </div>
+                <div class="input-group">
+                    <label for="decode-pass">Decryption Key:</label>
+                    <input type="password" id="decode-pass" name="password" placeholder="Enter password to decrypt..." required>
+                </div>
+                <button type="submit" class="action-btn">EXECUTE DECODING</button>
+            </form>
+            <div id="decode-status" class="status-box hidden">
+                <h3>Extracted Payload:</h3>
+                <p id="extracted-text">...</p>
+            </div>
+        </section>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

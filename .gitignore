@@ -1,0 +1,13 @@
+# Ignore Python cache
+__pycache__/
+*.pyc
+
+# Ignore virtual environments
+venv/
+env/
+
+# Ignore user uploaded/generated images
+backend/uploads/*
+backend/outputs/*
+!backend/uploads/.gitkeep
+!backend/outputs/.gitkeep
